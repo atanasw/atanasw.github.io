@@ -37,7 +37,6 @@
   </div>
       
     <video class="-video -center" poster="./resources/pictures/gifloader.gif" muted autoplay loop onloadeddata="changeTextColor()" onplay="delayedFadeOutElement(); AutoResizeDiv();">
-<!-- <video class="-video" muted autoplay loop onplay="delayedFadeOutElement()" onplay="AutoResizeDiv()"> -->
         <source src="./resources/mymovie.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -57,26 +56,40 @@
   
 
   <div class="flex-container">
-    
-    <div class="flex-content flex-pics">
-        <img src="./resources/pictures/bugatti_main.jpg" class="flex-image" alt="Content Picture" >
-    </div>
+	
+	<div class="flex-content flex-pics">
+		<img src="./resources/pictures/bugatti_main.jpg" class="flex-image" alt="Content Picture" >
+	</div>
 
-    <div class="flex-content flex-text">
-        <p class="-medium">A custom made Bugatti'38 model with digital cyberpunk gauge. Developing customizable cinematic camera movements and special shaders for the dashboard effects. Using Unity HDRP pipeline.</p>
-    </div> 
+	<div class="flex-content flex-text">
+		<p class="-medium">A custom made Bugatti'38 model with digital cyberpunk gauge. For the dynamic camera a customizable script is made that allows creating multiple paths each with different speed, transition and darkening effects. The end result is a cinematic-like animation of the camera, which is mainly achieved by a Unity coroutine logic. The scene is using HDRP pipeline for better visual quality. The 3D model of the car is optimized for games and consists of about 180k triangles.</p>
+	</div> 
 
   </div>
   
+	<div class="flex-container">
+    
+		<div class="flex-content flex-text">
+			<p class="-medium">Inspired by the synthwave and cyberpunk neon styles, two custom shader effects are implemented: purple stripes that move vertically with the car speed representing the retro sun graphics and old screen noise achieved by constantly moving transparent horizontal lines ontop of the whole gauge. For the glitch effect before the "manual override" texture appears, a few tricks are done: horizontal displacement of the UV, based on the vertical position, speed and strength set from a Unity script. The final shader feature is cutting the output in a star-like shape and saturating the colors.</p>
+		</div> 
+	
+		<video class="-video-small -center" poster="./resources/pictures/gifloader.gif" muted autoplay loop onloadeddata="changeTextColor()" onplay="delayedFadeOutElement(); AutoResizeDiv();">
+			<source src="./resources/gauge.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+
+
+	</div>
+  
   <!-- PlideUI Section -->
   <h1 class="-center" id="my-projects-scroll">Plide UI</h1>
-  <h2 class="-center">Android application with native graphics</h2>
+  <h2 class="-center">Android application with OpenGL graphics</h2>
   
 
   <div class="flex-container">
     
     <div class="flex-content flex-text">
-        <p class="-medium">The application provides an interface for faster mobile device control. It's written in C++ with OpenGL graphics and Java using Android Studio.</p>
+        <p class="-medium">The application provides an interface for faster mobile device control. It's written in C++ with OpenGL and Java using Android Studio. The code consists of custom classes for multithreading, button interaction and 2D graphics rendering. The goal is to create an easier way to start apps and control device features. That is done by one finger gestures in a small touch screen area.</p>
     </div> 
 
     <div class="flex-content flex-pics">

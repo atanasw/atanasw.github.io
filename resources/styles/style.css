@@ -97,6 +97,7 @@ hr{
 }
 
 .-video{max-width:100%;min-width:550px;height:auto;margin: auto;}
+.-video-small{object-fit: cover;border-radius: 50%;padding:120px;max-width:100%;min-width:550px;height:auto;margin: auto;}
 .-center{text-align:center}
 
 
