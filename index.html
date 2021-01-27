@@ -10,39 +10,21 @@
 
 <!-- Menu -->
 <div class="top-bar">
-
+  <a onclick="scrollToProjects()" class="button_ hvr-shutter-in-vertical">Projects</a>
   <a href="https://github.com/naskovt?tab=repositories" class="button_ hvr-shutter-in-vertical">GitHub</a>
   <a href="https://www.linkedin.com/in/atanas-vasilev-7b1923149/" class="button_ hvr-shutter-in-vertical">LinkedIn</a>
   <a onclick="scrollToAbout()" class="button_ hvr-shutter-in-vertical">About Me</a>
-
 </div>
-
 
 <!-- Header -->
 <header >
 
-
 <div class="video-div">
-
-  <div class="ontop-of-video">
-
-    <p class="ontop-of-video-p fade-out">
-        The creative side of coding.
-    </p>
-    
-    <div class="triangle-container" onclick="scrollToProjects();">
-      <img  class="triangle bounce" src="./resources/pictures/arrow2.png" alt="arrow">
-    </div>
-
-  </div>
-      
-    <video class="-video -center" poster="./resources/pictures/gifloader.gif" muted autoplay loop onloadeddata="changeTextColor()" onplay="delayedFadeOutElement(); AutoResizeDiv();">
+    <video class="-video -center" poster="./resources/pictures/gifloader.gif" muted autoplay loop>
         <source src="./resources/mymovie.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>
-
-
 
 </header>
 
@@ -73,7 +55,7 @@
 			<p class="-medium">Inspired by the synthwave and cyberpunk neon styles, two custom shader effects are implemented: purple stripes that move vertically with the car speed representing the retro sun graphics and old screen noise achieved by constantly moving transparent horizontal lines ontop of the whole gauge. For the glitch effect before the "manual override" texture appears, a few tricks are done: horizontal displacement of the UV, based on the vertical position, speed and strength set from a Unity script. The final shader feature is cutting the output in a star-like shape and saturating the colors.</p>
 		</div> 
 	
-		<video class="-video-small -center" poster="./resources/pictures/gifloader.gif" muted autoplay loop onloadeddata="changeTextColor()" onplay="delayedFadeOutElement(); AutoResizeDiv();">
+		<video class="-video-small -center" poster="./resources/pictures/gifloader.gif" muted autoplay loop>
 			<source src="./resources/gauge.mp4" type="video/mp4">
 			Your browser does not support the video tag.
 		</video>
@@ -381,6 +363,7 @@
     </div>
 
   </div>
+  
   <!-- ========================================================================================  -->
   <div class=" flex-container ">
     <a href="tel:+359883440788" class="contacts-click  flex-contacts">+359883440788</a>
@@ -388,75 +371,21 @@
     <a href="https://www.linkedin.com/in/atanas-vasilev-7b1923149/" class="contacts-click flex-contacts">LinkedIn</a>
   </div>
   <p class="-text-grey -center">XR developer at QuarkVR</p>
-  <!-- <h2>call:  &emsp;naskovvt@abv.bg</h2> -->
 
   <hr>
   
 </div>
 
-
 <script type="text/javascript">
 
-function scrollToAbout(){
-
+function scrollToAbout()
+{
   document.getElementById("about-me-scroll").scrollIntoView();
-
 }
 
-function scrollToProjects(){
-
+function scrollToProjects()
+{
   document.getElementById("my-projects-scroll").scrollIntoView();
-
 }
-
-
-//////////////////// resize text ontop of video 
-var ratio = 0.565;
-var videoDiv = document.getElementsByClassName("video-div")[0];
-var ontopVideoP = document.getElementsByClassName("ontop-of-video")[0];
-videoDiv.style.width = "auto";
-
-function AutoResizeDiv(){
-  ontopVideoP.style.top = (videoDiv.getBoundingClientRect().height) / 2.7 + "px";
-}
-
-window.onresize = AutoResizeDiv;
-//////////////////////////////
-
-
-//////////////////// Fade in out ontop of video p
-
-var opacityValue = 1;
-var opacityElements = document.getElementsByClassName("fade-out");
-var arraySize = opacityElements.length;
-
-function delayedFadeOutElement(){
-  window.setTimeout(fadeOutElement, 2200); // milliseconds
-}
-
-function fadeOutElement(){
-
-  if (opacityValue > 0){
-
-
-    opacityValue -= 0.1; // subtract each time from opacity
-
-    for(var i = 0 ; i < arraySize; i++){
-      opacityElements[i].style.opacity = String(opacityValue);
-    } 
-
-    window.setTimeout(fadeOutElement, 80); // milliseconds delay between subtractions
-  }
-
-}
-
-function changeTextColor(){
-  for(var i = 0 ; i < arraySize; i++){
-      opacityElements[i].style.color = 'white';
-    } 
-}
-
-//////////////////////////////
-
 
 </script>

@@ -55,17 +55,6 @@ a{
    font-family:  pnova-regular, pnova-light;
 }
 
-.ontop-of-video-p{
-   font-size:4vw;
-   font-weight: 900;
-   text-align: center;
-   color: #444444;
-}
-
-.fade-out{
-   opacity: 1;
-}
-
 p,h3{
    font-size:1.3em;
 }
@@ -86,8 +75,6 @@ p{
 
 /* ============================================================ */
 
-
-
 hr{
    box-sizing:content-box;
    height:0;overflow:visible;
@@ -100,7 +87,6 @@ hr{
 .-video-small{object-fit: cover;border-radius: 50%;padding:120px;max-width:100%;min-width:550px;height:auto;margin: auto;}
 .-center{text-align:center}
 
-
 img{
    border-radius:10px;
 }
@@ -111,7 +97,6 @@ hr{
 
 header{
    text-align:center;
-
 }
 
 .page-body{
@@ -129,37 +114,7 @@ header{
    align-items: center;
 }
 
-
-.ontop-of-video{
-	z-index:1;
-	color: white;
-	width:100%;
-	position: absolute;
-   text-align: center;
-}
-
- /* TRIANGLE arrow on top of video */
- 
-.triangle-container{
-
-   display: flex;
-   align-items: flex-end;
-   justify-content: center;
-
-   width:10%;
-   height: 10vmax;
-   cursor:pointer;
-   margin:auto;
-}
-
- .triangle {
-   max-width:80px;
-   width:80%;
-   height: auto;
-}
-
 /* Flex Box contents */
-
 .flex-container {
    display: flex;
    flex-direction: row;
@@ -211,7 +166,10 @@ header{
    right: 0;
    z-index: 10;
    background-color: white ;
-   text-align: center;
+
+    display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
 
    -webkit-box-shadow: 0px 2px 8px 0px rgba(112,112,112,0.6);
    -moz-box-shadow: 0px 2px 8px 0px rgba(112,112,112,0.6);
@@ -219,7 +177,7 @@ header{
 }
 
 .button_, .contacts-click{
-      position: relative;
+   position: relative;
    display: inline-block;
    border:none;
    overflow:hidden;
@@ -230,9 +188,8 @@ header{
 
 .button_{
    height:100%;
-   width: 30%;
-   max-width: 230px;
-   
+   flex-basis:200px;
+   min-width: 100px;
    text-align:center;
    padding-top: 6px;
 }
