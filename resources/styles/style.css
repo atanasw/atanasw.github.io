@@ -83,7 +83,7 @@ hr{
    margin:20px 0
 }
 
-.-video{max-width:100%;min-width:550px;height:auto;margin: auto;}
+.-video{max-width:100%;min-width:400px;height:auto;margin: auto;}
 .-video-small{object-fit: cover;border-radius: 50%;padding:120px;max-width:100%;min-width:550px;height:auto;margin: auto;}
 .-center{text-align:center}
 
@@ -189,7 +189,7 @@ header{
 .button_{
    height:100%;
    flex-basis:200px;
-   min-width: 100px;
+   min-width: 70px;
    text-align:center;
    padding-top: 6px;
 }
