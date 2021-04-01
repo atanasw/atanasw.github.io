@@ -34,7 +34,7 @@
     
   <!-- Car Section -->
   <h1 class="-center" id="my-projects-scroll">Cinematic Bugatti</h1>
-  <h2 class="-center">HDRP Unity scene with custom graphics experience</h2>
+  <h2 class="-center">HDRP Unity scene with custom graphics and scripts</h2>
   
 
   <div class="flex-container">
@@ -44,7 +44,7 @@
 	</div>
 
 	<div class="flex-content flex-text">
-		<p class="-medium">A custom made Bugatti'38 model with digital cyberpunk gauge. For the dynamic camera a customizable script is made that allows creating multiple paths each with different speed, transition and darkening effects. The end result is a cinematic-like animation of the camera, which is mainly achieved by a Unity coroutine logic. The scene is using HDRP pipeline for better visual quality. The 3D model of the car is optimized for games and consists of about 180k triangles.</p>
+		<p class="-medium">Dynamic camera with customizable script was made that allows creating multiple paths each with different speed, transition and darkening effects. The end result is a cinematic-like animation of the main camera, which is mostly achieved by a Unity coroutine logic. The scene is using HDRP pipeline for better visual quality. The Bugatti'38 was modeled in Maya and optimized for games - consists of about 180k triangles.</p>
 	</div> 
 
   </div>
@@ -52,32 +52,49 @@
 	<div class="flex-container">
     
 		<div class="flex-content flex-text">
-			<p class="-medium">Inspired by the synthwave and cyberpunk neon styles, two custom shader effects are implemented: purple stripes that move vertically with the car speed representing the retro sun graphics and old screen noise achieved by constantly moving transparent horizontal lines ontop of the whole gauge. For the glitch effect before the "manual override" texture appears, a few tricks are done: horizontal displacement of the UV, based on the vertical position, speed and strength set from a Unity script. The final shader feature is cutting the output in a star-like shape and saturating the colors.</p>
+			<p class="-medium">Inspired by the synthwave and cyberpunk neon styles, a few custom shader effects were implemented: purple stripes that move vertically with the car speed representing the retro sun graphics and old screen noise achieved by constantly moving transparent horizontal lines ontop of the texture. For the glitch effect a few tricks were made: horizontal displacement of the UV, based on the vertical position, and both speed and strength being set from a Unity script. The final disappearing cuts the output in a star-like shape and saturates the colors.</p>
 		</div> 
 	
-		<video class="-video-small -center" poster="./resources/pictures/gifloader.gif" muted autoplay loop>
+		<video class="-video-circle -center" poster="./resources/pictures/gifloader.gif" muted autoplay loop>
 			<source src="./resources/gauge.mp4" type="video/mp4">
 			Your browser does not support the video tag.
 		</video>
-
-
 	</div>
   
   <!-- PlideUI Section -->
   <h1 class="-center" id="my-projects-scroll">Plide UI</h1>
-  <h2 class="-center">Android application with OpenGL graphics</h2>
+  <h2 class="-center">Android service with OpenGL graphics</h2>
   
 
   <div class="flex-container">
     
     <div class="flex-content flex-text">
-        <p class="-medium">The application provides an interface for faster mobile device control. It's written in C++ with OpenGL and Java using Android Studio. The code consists of custom classes for multithreading, button interaction and 2D graphics rendering. The goal is to create an easier way to start apps and control device features. That is done by one finger gestures in a small touch screen area.</p>
+        <p class="-medium">The application provides an interface for faster mobile device control. It's written in C++ with OpenGL and Java using Android Studio. The code consists of custom classes for multithreading, button interaction and 2D graphics rendering. The goal is to create an easier way to start apps and control device features. That is achieved by one finger gestures in a small touch screen area for the best user experience.</p>
     </div> 
 
     <div class="flex-content flex-pics">
         <img src="./resources/pictures/plideui.jpg" class="flex-image" alt="Content Picture" >
     </div>
 
+	<video class="-video-circle" poster="./resources/pictures/gifloader.gif" muted autoplay loop>
+		<source src="./resources/plideuicamera.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+	
+	<div class="flex-content flex-text">
+		<p class="-medium"><i>"Opening applications is as quick as pointing the button icon and lifting the finger up!"</i></p>
+		
+		<p class="-medium">The first step is to activate the PlideUI menu by a swipe gesture from the screen edge. The whole structure of menus and submenus is predefined by the user and is fully customizable. PlideUI can find your application's start command and icon texture by just typing the name of it. The usage of custom textures for buttons is available and other useful functions are coming soon.</p>
+	</div> 
+	
+	<div class="flex-content flex-text">
+		<p class="-medium">Opening a predifined submenu can be done by pointing the icon and then dragging back your finger to the center circle. A preview of the submenu will be showed and then the current menu will be switched with the new one. To go back into the previous menu, the user needs to point to the empty sector. This gives freedom to group and arrange all of the desired apps for quicker access.</p>
+	</div> 
+	
+	<video class="-video-circle" poster="./resources/pictures/gifloader.gif" muted autoplay loop>
+		<source src="./resources/plideuisubmenu.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
   </div>
   
   <!-- Interior walkthrough Section -->
@@ -175,7 +192,7 @@
     </div>
 
     <div class="flex-content flex-text">
-          <p class="-medium avatar-speech"><i>"Doing well!", "Try to do the same movements as me!",
+          <p class="-medium"><i>"Doing well!", "Try to do the same movements as me!",
              "Lift the hands a bit!", "Hands must be orientated sideways!"</i></p>
 
               <p class="-medium"> The avatar, that is teaching you is an AI with behaviour tree, that responds to the recognized movements,
